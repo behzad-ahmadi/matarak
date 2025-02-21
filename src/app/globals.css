@@ -5,4 +5,27 @@
 html {
   font-family: "Vazirmatn", system-ui;
   font-feature-settings: "ss01";
+  scroll-behavior: smooth;
+}
+
+.input {
+  @apply focus:outline-none;
+  outline-style: none !important;
+}
+
+.textarea {
+  @apply focus:outline-none;
+  outline-style: none !important;
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
