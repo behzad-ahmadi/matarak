@@ -2,10 +2,12 @@
 
 import { useState } from "react";
 
+type Relationship = "spouse" | "child" | "parent" | "sibling" | undefined;
+
 type Heir = {
   id: number;
-  relationship: string;
-  gender: string;
+  relationship: Relationship;
+  gender: "male" | "female" | undefined;
   count?: number;
 };
 
@@ -92,8 +94,8 @@ export default function InheritancePage() {
   const addHeir = () => {
     const newHeir = {
       id: Date.now(),
-      relationship: "",
-      gender: "",
+      relationship: undefined,
+      gender: undefined,
     };
     setHeirs([...heirs, newHeir]);
   };
