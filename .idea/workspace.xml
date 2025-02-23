@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e85516d-0b70-4a3b-bf4a-360bad588f36" name="Changes" comment="Fix persian number style">
+    <list default="true" id="6e85516d-0b70-4a3b-bf4a-360bad588f36" name="Changes" comment="Added type">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +103,8 @@
       <workItem from="1740093589650" duration="2999000" />
       <workItem from="1740097473230" duration="306000" />
       <workItem from="1740127434758" duration="74000" />
-      <workItem from="1740127557447" duration="2605000" />
+      <workItem from="1740127557447" duration="3244000" />
+      <workItem from="1740333307854" duration="243000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -129,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740097773311</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added type">
+      <option name="closed" value="true" />
+      <created>1740201763185</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1740201763185</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +159,8 @@
     <MESSAGE value="Init" />
     <MESSAGE value="Add inputs&#10;Add formik &amp; clsx" />
     <MESSAGE value="Fix persian number style" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix persian number style" />
+    <MESSAGE value="Added type" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added type" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
