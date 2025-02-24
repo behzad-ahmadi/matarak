@@ -3,26 +3,26 @@ import { FieldHookConfig, useField } from "formik";
 import clsx from "clsx";
 import Button from "@/ui/buttons/button";
 
-interface RadioOption {
+export type RadioOption = {
   label: string;
   value: string | number;
   children?: React.ReactNode;
-}
+};
 
 export enum RadioType {
   button = "btn",
   radio = "radio",
 }
 
-interface RadioGroupProps {
+interface Props extends FieldHookConfig<string | number> {
   name: string;
   options: RadioOption[];
   className?: string;
   radioItemClassName?: string;
   radioType?: RadioType;
+  disabled?: boolean;
+  title?: string;
 }
-
-type Props = RadioGroupProps & FieldHookConfig<string | number>;
 
 const FormRadioGroup = ({
   name,
@@ -46,10 +46,10 @@ const FormRadioGroup = ({
         <Button
           type="button"
           className={clsx(
-            "btn-ghost flex-grow !rounded-md focus:bg-transparent",
+            "flex-grow !rounded-md focus:bg-transparent",
             field.value === option.value
-              ? "btn-primary outline outline-2 outline-text-default !font-semibold"
-              : "btn-secondary outline outline-1 outline-text-light !font-normal",
+              ? "btn-accent outline-text-default !font-semibold"
+              : "btn-ghost outline-text-light !font-normal",
             hasError && "btn-error",
             radioItemClassName,
           )}
